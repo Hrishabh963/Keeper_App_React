@@ -1,5 +1,4 @@
 import {Header} from './components/Header'
-import  './style.css'
 import { Note } from './components/Note'
 import { Footer } from './components/Footer'
 import { Form } from './components/Form'
@@ -24,10 +23,11 @@ export const  App = ()=> {
     <Form onAdd={addNote} />
     {
       notes.map((note,index)=>{
-    return <Note index={index} title={note.title} content={note.content} deleteNote={handleDelete} />;
+    return <Note index={index} title={note.title} content={note.content} key={index} deleteNote={handleDelete} />;
       })
     }
     <Footer />
+
     </>
   )
 }

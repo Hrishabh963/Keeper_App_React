@@ -26,7 +26,7 @@ export const Form = (props)=>{
            
             <textarea name="textarea" ref={text} cols="25" rows={isExpanded ? "5" : "2"} placeholder="Type something here..."  onClick={expand}></textarea>
             <Zoom in={isExpanded}> 
-            <Fab type="submit" color="secondary"><AddIcon /></Fab>
+            <Fab type="submit" color="secondary" ><AddIcon /></Fab>
             </Zoom>
           
             
